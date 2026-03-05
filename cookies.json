@@ -1,0 +1,482 @@
+[
+  {
+    "name": "_MHYUUID",
+    "value": "cea78afc-4361-44aa-bd83-2f06c022d31f",
+    "domain": ".mihoyo.com",
+    "path": "/",
+    "expires": 1804215549,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "aliyungf_tc",
+    "value": "2a1169e158ea2fb3fb9e6af309d6f7617318b784620427165d49177fbefaeb6b",
+    "domain": "public-data-api.mihoyo.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": true,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "DEVICEFP_SEED_ID",
+    "value": "d2a6534354f39401",
+    "domain": ".mihoyo.com",
+    "path": "/",
+    "expires": 1804215528,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "DEVICEFP_SEED_TIME",
+    "value": "1772679526457",
+    "domain": ".mihoyo.com",
+    "path": "/",
+    "expires": 1804215528,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "DEVICEFP",
+    "value": "38d8169484145",
+    "domain": ".mihoyo.com",
+    "path": "/",
+    "expires": 1804215550,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "aliyungf_tc",
+    "value": "4fb3bcfb3e3b4896cbb75f29530b31fa2c09f43e930fde4b34ea8a050895a2a9",
+    "domain": "passport-api.mihoyo.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": true,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "aliyungf_tc",
+    "value": "8eef1918eba8a2d68f43719554819160b025ac2abc5834b517b61e40537e7a39",
+    "domain": "api-cloudgame.mihoyo.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": true,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "MIHOYO_LOGIN_PLATFORM_LIFECYCLE_ID",
+    "value": "6969741601",
+    "domain": ".mihoyo.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "uni_web_token",
+    "value": "002fff25649f42eab57baca5e5a17ea80agcphelmm_mhy",
+    "domain": ".mihoyo.com",
+    "path": "/",
+    "expires": 1772852350.073211,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "cookie_token_v2",
+    "value": "v2_vaOd7gTKIaHkcwaZqVBB3hxXTZh0vv24P5hazeFjhwn-OBtUBuQe0-7tnLq9A25Rtvwqy0STpJMGWFgtTNP5W_kulOeFd3WaPtl_9BNnsE6_M4sAaGCCrnKOD21ZJmN8Opky0_Eq4YhGOBgu6EqFZyA=.CAE=",
+    "domain": ".mihoyo.com",
+    "path": "/",
+    "expires": 1804215550.07297,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "account_mid_v2",
+    "value": "0agcphelmm_mhy",
+    "domain": ".mihoyo.com",
+    "path": "/",
+    "expires": 1804215550.073024,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "account_id_v2",
+    "value": "272910080",
+    "domain": ".mihoyo.com",
+    "path": "/",
+    "expires": 1804215550.073042,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "ltoken_v2",
+    "value": "v2_qP12eTb4dLydLTDktk4cgrcsHD8-oEfD6RYlmMDpvMkp0u6cLdSzo2R2WUCwFKC4FUsaeBSXQG9hDHDXRYKm2AB4iG18XruuWdyCuv7_qoPHOJ4TaPW3Hkllk6pdUwnnCsuziaBOfkkloRbFTYFLmb4=.CAE=",
+    "domain": ".mihoyo.com",
+    "path": "/",
+    "expires": 1804215550.073056,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "ltmid_v2",
+    "value": "0agcphelmm_mhy",
+    "domain": ".mihoyo.com",
+    "path": "/",
+    "expires": 1804215550.073072,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "ltuid_v2",
+    "value": "272910080",
+    "domain": ".mihoyo.com",
+    "path": "/",
+    "expires": 1804215550.073087,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "cookie_token",
+    "value": "7j1jnaTcNAMyPJrPFG5bk5pOl6N46iQLxW0kgDzc",
+    "domain": ".mihoyo.com",
+    "path": "/",
+    "expires": 1804215550.0731,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "account_id",
+    "value": "272910080",
+    "domain": ".mihoyo.com",
+    "path": "/",
+    "expires": 1804215550.073115,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "ltoken",
+    "value": "Htvbqa8R6lwz8UZpB9cvJaVVcbOzD2J7ADrEpufD",
+    "domain": ".mihoyo.com",
+    "path": "/",
+    "expires": 1804215550.073129,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "ltuid",
+    "value": "272910080",
+    "domain": ".mihoyo.com",
+    "path": "/",
+    "expires": 1804215550.073196,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "SERVERID",
+    "value": "0e21a9963c43626a6ba0428921e6d9f5|1772679550|1772679526",
+    "domain": "h5collector.mihoyo.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "SERVERCORSID",
+    "value": "0e21a9963c43626a6ba0428921e6d9f5|1772679550|1772679526",
+    "domain": "h5collector.mihoyo.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "aliyungf_tc",
+    "value": "400b99bb6695bf27011ce00ac6c94f0af047f18dcd8c912e07e237c8a834f451",
+    "domain": "passport-api.miyoushe.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": true,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "uni_web_token",
+    "value": "002fff25649f42eab57baca5e5a17ea80agcphelmm_mhy",
+    "domain": ".miyoushe.com",
+    "path": "/",
+    "expires": 1772852350.343502,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "cookie_token",
+    "value": "7j1jnaTcNAMyPJrPFG5bk5pOl6N46iQLxW0kgDzc",
+    "domain": ".miyoushe.com",
+    "path": "/",
+    "expires": 1804215550.343534,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "account_id",
+    "value": "272910080",
+    "domain": ".miyoushe.com",
+    "path": "/",
+    "expires": 1804215550.343554,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "ltoken",
+    "value": "Htvbqa8R6lwz8UZpB9cvJaVVcbOzD2J7ADrEpufD",
+    "domain": ".miyoushe.com",
+    "path": "/",
+    "expires": 1804215550.343572,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "ltuid",
+    "value": "272910080",
+    "domain": ".miyoushe.com",
+    "path": "/",
+    "expires": 1804215550.343616,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "cookie_token_v2",
+    "value": "v2_vaOd7gTKIaHkcwaZqVBB3hxXTZh0vv24P5hazeFjhwn-OBtUBuQe0-7tnLq9A25Rtvwqy0STpJMGWFgtTNP5W_kulOeFd3WaPtl_9BNnsE6_M4sAaGCCrnKOD21ZJmN8Opky0_Eq4YhGOBgu6EqFZyA=.CAE=",
+    "domain": ".miyoushe.com",
+    "path": "/",
+    "expires": 1804215550.343654,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "account_mid_v2",
+    "value": "0agcphelmm_mhy",
+    "domain": ".miyoushe.com",
+    "path": "/",
+    "expires": 1804215550.343696,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "account_id_v2",
+    "value": "272910080",
+    "domain": ".miyoushe.com",
+    "path": "/",
+    "expires": 1804215550.343751,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "ltoken_v2",
+    "value": "v2_qP12eTb4dLydLTDktk4cgrcsHD8-oEfD6RYlmMDpvMkp0u6cLdSzo2R2WUCwFKC4FUsaeBSXQG9hDHDXRYKm2AB4iG18XruuWdyCuv7_qoPHOJ4TaPW3Hkllk6pdUwnnCsuziaBOfkkloRbFTYFLmb4=.CAE=",
+    "domain": ".miyoushe.com",
+    "path": "/",
+    "expires": 1804215550.343768,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "ltmid_v2",
+    "value": "0agcphelmm_mhy",
+    "domain": ".miyoushe.com",
+    "path": "/",
+    "expires": 1804215550.343786,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "ltuid_v2",
+    "value": "272910080",
+    "domain": ".miyoushe.com",
+    "path": "/",
+    "expires": 1804215550.343802,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "aliyungf_tc",
+    "value": "fdf39014fd3e3fcdfebd5a725aea38814943dbec9736f7fa620223cca4ef542d",
+    "domain": "passport-api.mihoyogift.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": true,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "uni_web_token",
+    "value": "002fff25649f42eab57baca5e5a17ea80agcphelmm_mhy",
+    "domain": ".mihoyogift.com",
+    "path": "/",
+    "expires": 1772852350.553092,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "cookie_token",
+    "value": "7j1jnaTcNAMyPJrPFG5bk5pOl6N46iQLxW0kgDzc",
+    "domain": ".mihoyogift.com",
+    "path": "/",
+    "expires": 1804215550.553122,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "account_id",
+    "value": "272910080",
+    "domain": ".mihoyogift.com",
+    "path": "/",
+    "expires": 1804215550.553162,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "ltoken",
+    "value": "Htvbqa8R6lwz8UZpB9cvJaVVcbOzD2J7ADrEpufD",
+    "domain": ".mihoyogift.com",
+    "path": "/",
+    "expires": 1804215550.553211,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "ltuid",
+    "value": "272910080",
+    "domain": ".mihoyogift.com",
+    "path": "/",
+    "expires": 1804215550.553234,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "cookie_token_v2",
+    "value": "v2_vaOd7gTKIaHkcwaZqVBB3hxXTZh0vv24P5hazeFjhwn-OBtUBuQe0-7tnLq9A25Rtvwqy0STpJMGWFgtTNP5W_kulOeFd3WaPtl_9BNnsE6_M4sAaGCCrnKOD21ZJmN8Opky0_Eq4YhGOBgu6EqFZyA=.CAE=",
+    "domain": ".mihoyogift.com",
+    "path": "/",
+    "expires": 1804215550.553249,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "account_mid_v2",
+    "value": "0agcphelmm_mhy",
+    "domain": ".mihoyogift.com",
+    "path": "/",
+    "expires": 1804215550.553266,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "account_id_v2",
+    "value": "272910080",
+    "domain": ".mihoyogift.com",
+    "path": "/",
+    "expires": 1804215550.553279,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "ltoken_v2",
+    "value": "v2_qP12eTb4dLydLTDktk4cgrcsHD8-oEfD6RYlmMDpvMkp0u6cLdSzo2R2WUCwFKC4FUsaeBSXQG9hDHDXRYKm2AB4iG18XruuWdyCuv7_qoPHOJ4TaPW3Hkllk6pdUwnnCsuziaBOfkkloRbFTYFLmb4=.CAE=",
+    "domain": ".mihoyogift.com",
+    "path": "/",
+    "expires": 1804215550.553292,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "ltmid_v2",
+    "value": "0agcphelmm_mhy",
+    "domain": ".mihoyogift.com",
+    "path": "/",
+    "expires": 1804215550.553307,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "ltuid_v2",
+    "value": "272910080",
+    "domain": ".mihoyogift.com",
+    "path": "/",
+    "expires": 1804215550.553319,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "aliyungf_tc",
+    "value": "48a0fb39af8d47c0a585548bbed02206f770469b427cbd4da7a7b8c43b3f0a37",
+    "domain": "hk4e-sdk.mihoyo.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": true,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "SERVERID",
+    "value": "8327f31a1d1eea7526f74692c55f780c|1772679550|1772679550",
+    "domain": "data-abtest-api.mihoyo.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "SERVERCORSID",
+    "value": "8327f31a1d1eea7526f74692c55f780c|1772679550|1772679550",
+    "domain": "data-abtest-api.mihoyo.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "None"
+  }
+]
