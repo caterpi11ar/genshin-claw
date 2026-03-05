@@ -1,5 +1,6 @@
 ---
 name: genshin-skills
+version: 0.1.0
 description: >-
   Browser automation via Playwright for LLMs. Use when you need to:
   (1) automate web interactions (click, fill, navigate, screenshot),
@@ -7,6 +8,17 @@ description: >-
   (3) manage cookies or browser sessions,
   (4) log in to Genshin Impact cloud gaming and claim daily rewards.
   Background script manages browser sessions; agent invokes via bash.
+metadata:
+  openclaw:
+    requires:
+      bins:
+        - node
+        - npx
+    install:
+      - kind: node
+        package: playwright
+        bins:
+          - npx
 ---
 
 # Genshin-Skills
@@ -19,9 +31,9 @@ Browser automation skills for LLMs — 33 atomic Playwright-based browser operat
 
 ```bash
 # Install
-pnpm install
+npm install
 npx playwright install chromium
-pnpm build
+npm run build
 
 # Start browser (background)
 node <SKILL_DIR>/dist/scripts/start-browser.js &
