@@ -1,6 +1,6 @@
 # Skills
 
-技能是 genshin-claw 的任务单元。每个技能是一个 `SKILL.md` 文件，包含 YAML frontmatter（机器配置）和 Markdown 正文（AI 指令）。添加新技能只需写一个 Markdown 文件，无需编写 TypeScript 代码。
+技能是 genshin-impact-claw 的任务单元。每个技能是一个 `SKILL.md` 文件，包含 YAML frontmatter（机器配置）和 Markdown 正文（AI 指令）。添加新技能只需写一个 Markdown 文件，无需编写 TypeScript 代码。
 
 ## 内置技能
 

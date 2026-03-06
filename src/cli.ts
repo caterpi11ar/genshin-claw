@@ -7,7 +7,7 @@ import { logger } from "./utils/logger.js";
 const program = new Command();
 
 program
-  .name("genshin-claw")
+  .name("giclaw")
   .description("AI agent for Genshin Impact cloud gaming")
   .version("0.2.0")
   .option("-c, --config <path>", "config file path", "./config.json")

@@ -88,7 +88,7 @@ export function Dashboard({ gateway }: DashboardProps) {
       {/* Header */}
       <Box>
         <Text bold color="cyan">
-          Genshin Auto
+          Genshin Impact Claw
         </Text>
         <Box flexGrow={1} />
         <Text dimColor>

@@ -1,23 +1,21 @@
-# Genshin Claw
+# Genshin Impact Claw
 
 专为原神服务的智能体。
 
 通过视觉模型分析游戏截图，自动完成云原神的日常任务——登录、领取月卡、收取邮件、探索派遣、纪行奖励。无需选择器、无需坐标硬编码。截图发给 AI，AI 决定下一步操作。
 
-[技能列表](skills/README.md) · [配置参考](.env.example)
+[技能列表](skills/README.md) · [配置参考](.env.example) · [官网](https://giclaw.cn)
 
 ## Install（推荐）
 
 运行环境：**Node >= 20**
 
 ```bash
-npm install -g genshin-claw@latest
-# or: pnpm add -g genshin-claw@latest
-
-npx playwright install chromium
+npm install -g genshin-impact-claw@latest
+# or: pnpm add -g genshin-impact-claw@latest
 ```
 
-安装后全局可用 `genshin-claw` 命令。
+安装后全局可用 `giclaw` 命令。首次运行时自动下载 Chromium，无需手动安装。
 
 ## Quick start
 
@@ -29,13 +27,13 @@ export MIDSCENE_MODEL_API_KEY=your-api-key
 export MIDSCENE_MODEL_FAMILY=gemini
 
 # 2. 首次运行（可见浏览器，手动登录后自动保存 cookie）
-genshin-claw run --no-headless
+giclaw run --no-headless
 
 # 3. 后续运行（headless，复用 cookie）
-genshin-claw run
+giclaw run
 
 # 4. 验证配置
-genshin-claw run --dry-run
+giclaw run --dry-run
 ```
 
 首次需要手动登录米哈游账号，登录后 cookie 自动保存到 `cookies.json`，后续运行自动复用。
@@ -45,11 +43,10 @@ genshin-claw run --dry-run
 推荐使用 `pnpm`。
 
 ```bash
-git clone https://github.com/caterpi11ar/genshin-claw.git
-cd genshin-claw
+git clone https://github.com/caterpi11ar/genshin-impact-claw.git
+cd genshin-impact-claw
 
 pnpm install
-npx playwright install chromium
 pnpm build
 
 # 单次运行
@@ -59,18 +56,18 @@ pnpm start
 pnpm dev
 ```
 
-Note: `pnpm dev` 通过 `tsx watch` 直接运行 TypeScript。`pnpm build` 产出 `dist/`，通过 `pnpm start` 或全局 `genshin-claw` 命令运行。
+Note: `pnpm dev` 通过 `tsx watch` 直接运行 TypeScript。`pnpm build` 产出 `dist/`，通过 `pnpm start` 或全局 `giclaw` 命令运行。
 
 ## Daemon 模式
 
 常驻后台，按 cron 定时执行，支持 TUI 仪表盘 + Web 面板：
 
 ```bash
-genshin-claw daemon
+giclaw daemon
 
 # 指定端口 / 禁用 Web
-genshin-claw daemon --port 8080
-genshin-claw daemon --no-web
+giclaw daemon --port 8080
+giclaw daemon --no-web
 ```
 
 默认调度：每天 06:00（Asia/Shanghai）。TTY 环境自动渲染 ink 仪表盘，非 TTY 回退到纯日志。
@@ -144,7 +141,7 @@ skills/battle-pass-claim/SKILL.md   # 纪行奖励
 ## CLI
 
 ```
-genshin-claw [options] [command]
+giclaw [options] [command]
 
 Commands:
   run                     单次运行（默认）

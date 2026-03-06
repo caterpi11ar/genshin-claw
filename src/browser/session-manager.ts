@@ -2,6 +2,7 @@ import { chromium } from "playwright";
 import type { Browser, BrowserContext, Page, Dialog } from "playwright";
 import { logger } from "../utils/logger.js";
 import { SessionError } from "../utils/errors.js";
+import { ensureChromium } from "./ensure-chromium.js";
 import type { AppConfig } from "../config/schema.js";
 
 export interface SessionOptions {
@@ -47,6 +48,8 @@ export class SessionManager {
     const viewport = options?.viewport ?? this.config.browser.viewport;
 
     logger.info(`Launching browser (headless: ${headless})`);
+
+    ensureChromium();
 
     this.browser = await chromium.launch({ headless });
     this.context = await this.browser.newContext({ viewport });
