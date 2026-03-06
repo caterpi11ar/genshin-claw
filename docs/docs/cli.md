@@ -15,6 +15,8 @@ giclaw [options] [command]
 |------|------|
 | `run` | 单次运行（默认） |
 | `daemon [options]` | Daemon 模式 |
+| `init [options]` | 交互式初始化配置 |
+| `config` | 显示配置路径 |
 
 ## 全局选项
 
@@ -33,9 +35,21 @@ giclaw [options] [command]
 | `-p, --port <number>` | Web 面板端口（默认 3000） |
 | `--no-web` | 禁用 Web 面板 |
 
+## Init 选项
+
+| 选项 | 说明 |
+|------|------|
+| `--non-interactive` | 跳过交互引导，仅创建默认配置文件 |
+
 ## 示例
 
 ```bash
+# 交互式初始化配置
+giclaw init
+
+# 非交互模式（CI 环境）
+giclaw init --non-interactive
+
 # 单次运行所有已启用任务
 giclaw run
 

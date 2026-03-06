@@ -1,7 +1,8 @@
 import { join, resolve as resolvePath, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import { mkdir, writeFile, access } from "node:fs/promises";
+import { mkdir, writeFile, readFile, access } from "node:fs/promises";
 import { homedir } from "node:os";
+import { parse as parseEnv } from "dotenv";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -92,4 +93,13 @@ export async function initStateDir(): Promise<{ created: string[] }> {
   }
 
   return { created };
+}
+
+export async function readEnvFile(): Promise<Record<string, string>> {
+  try {
+    const content = await readFile(PATHS.envPath, "utf-8");
+    return parseEnv(content);
+  } catch {
+    return {};
+  }
 }

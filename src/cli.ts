@@ -11,7 +11,7 @@ const program = new Command();
 program
   .name("giclaw")
   .description("AI agent for Genshin Impact cloud gaming")
-  .version("0.2.1")
+  .version("0.3.0")
   .option("-c, --config <path>", "config file path")
   .option("-t, --tasks <ids...>", "task IDs to run")
   .option("--headless", "force headless mode")
@@ -39,17 +39,45 @@ program
 
 program
   .command("init")
-  .description("Initialize ~/.giclaw/ directory with default config")
-  .action(async () => {
-    const { created } = await initStateDir();
-    if (created.length === 0) {
-      logger.info(`~/.giclaw/ already initialized at ${PATHS.stateDir}`);
-    } else {
-      logger.info(`Initialized ~/.giclaw/ at ${PATHS.stateDir}`);
-      for (const f of created) {
-        logger.info(`  Created ${f}`);
+  .description("Initialize ~/.giclaw/ with interactive setup")
+  .option("--non-interactive", "skip interactive prompts, create defaults only")
+  .action(async (initOpts) => {
+    const isTTY = process.stdin.isTTY && process.stdout.isTTY;
+    const nonInteractive = initOpts["nonInteractive"] || !isTTY;
+
+    if (nonInteractive) {
+      // Original non-interactive logic
+      const { created } = await initStateDir();
+      if (created.length === 0) {
+        logger.info(`~/.giclaw/ already initialized at ${PATHS.stateDir}`);
+      } else {
+        logger.info(`Initialized ~/.giclaw/ at ${PATHS.stateDir}`);
+        for (const f of created) {
+          logger.info(`  Created ${f}`);
+        }
+      }
+      return;
+    }
+
+    // Interactive mode
+    const { isModelConfigured, runSetupWizard } = await import(
+      "./config/wizard.js"
+    );
+
+    if (await isModelConfigured()) {
+      const { confirm } = await import("@inquirer/prompts");
+      const redo = await confirm({
+        message:
+          "Model is already configured. Do you want to reconfigure?",
+        default: false,
+      });
+      if (!redo) {
+        logger.info("No changes made.");
+        return;
       }
     }
+
+    await runSetupWizard();
   });
 
 program
@@ -61,9 +89,36 @@ program
     }
   });
 
+async function checkModelConfig(): Promise<boolean> {
+  const { isModelConfigured } = await import("./config/wizard.js");
+  return isModelConfigured();
+}
+
 async function runOnce(opts: Record<string, unknown>): Promise<void> {
   if (opts["verbose"]) {
     logger.setLevel("debug");
+  }
+
+  // Config check — prompt setup wizard if not configured
+  if (!(await checkModelConfig())) {
+    const isTTY = process.stdin.isTTY && process.stdout.isTTY;
+    if (isTTY) {
+      logger.warn(
+        "Model not configured. Starting setup wizard...",
+      );
+      const { runSetupWizard } = await import("./config/wizard.js");
+      await runSetupWizard();
+      // Re-check after wizard
+      if (!(await checkModelConfig())) {
+        logger.error("Model still not configured. Aborting.");
+        process.exit(1);
+      }
+    } else {
+      logger.error(
+        "Model not configured. Run `giclaw init` to set up your API key and model.",
+      );
+      process.exit(1);
+    }
   }
 
   const cliOverrides: Record<string, unknown> = {};
@@ -158,6 +213,14 @@ async function runDaemon(
 ): Promise<void> {
   if (opts["verbose"]) {
     logger.setLevel("debug");
+  }
+
+  // Config check — daemon mode cannot run interactive wizard
+  if (!(await checkModelConfig())) {
+    logger.error(
+      "Model not configured. Run `giclaw init` to set up your API key and model.",
+    );
+    process.exit(1);
   }
 
   const cliOverrides: Record<string, unknown> = {};

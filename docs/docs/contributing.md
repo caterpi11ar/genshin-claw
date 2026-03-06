@@ -15,6 +15,9 @@ cd genshin-impact-claw
 
 pnpm install
 pnpm build
+
+# 初始化配置（如果尚未配置）
+npx tsx src/cli.ts init
 ```
 
 ## 开发工作流

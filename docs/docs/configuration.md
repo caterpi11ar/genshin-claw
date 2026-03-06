@@ -5,6 +5,8 @@ title: 配置
 
 # 配置
 
+推荐通过 `giclaw init` 交互式引导完成模型配置。也可以手动编辑配置文件。
+
 三层覆盖优先级：`config.json` &lt; 环境变量 &lt; CLI 参数。
 
 ## config.json
@@ -41,7 +43,7 @@ MIDSCENE_MODEL_FAMILY=gemini
 # BROWSER_HEADLESS=true
 ```
 
-可以将以上变量写入项目根目录的 `.env` 文件，程序启动时自动加载。
+可以将以上变量写入 `~/.giclaw/.env` 文件（`giclaw init` 自动生成），或项目根目录的 `.env` 文件，程序启动时自动加载。
 
 ## 配置项说明
 

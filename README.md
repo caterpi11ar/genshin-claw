@@ -20,11 +20,8 @@ npm install -g giclaw@latest
 ## Quick start
 
 ```bash
-# 1. 配置模型（任意 OpenAI 兼容视觉模型）
-export MIDSCENE_MODEL_NAME=gemini-2.5-flash
-export MIDSCENE_MODEL_BASE_URL=https://generativelanguage.googleapis.com/v1beta/openai
-export MIDSCENE_MODEL_API_KEY=your-api-key
-export MIDSCENE_MODEL_FAMILY=gemini
+# 1. 交互式配置（选择模型提供商、填写 API key）
+giclaw init
 
 # 2. 首次运行（可见浏览器，手动登录后自动保存 cookie）
 giclaw run --no-headless
@@ -35,6 +32,8 @@ giclaw run
 # 4. 验证配置
 giclaw run --dry-run
 ```
+
+`giclaw init` 会引导你选择模型提供商（Gemini、OpenAI、豆包、通义千问等）并配置 API key，配置保存到 `~/.giclaw/.env`。如果跳过 init 直接运行，程序会自动触发引导。
 
 首次需要手动登录米哈游账号，登录后 cookie 自动保存到 `cookies.json`，后续运行自动复用。
 
@@ -146,6 +145,8 @@ giclaw [options] [command]
 Commands:
   run                     单次运行（默认）
   daemon [options]        Daemon 模式
+  init [options]          交互式初始化配置
+  config                  显示配置路径
 
 Options:
   -c, --config <path>     配置文件路径（默认 ./config.json）
@@ -157,4 +158,7 @@ Options:
 Daemon:
   -p, --port <number>     Web 面板端口（默认 3000）
   --no-web                禁用 Web 面板
+
+Init:
+  --non-interactive       跳过交互引导，仅创建默认文件
 ```
